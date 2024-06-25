@@ -1,15 +1,61 @@
+/*----CSS Reset----*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*----variables----*/
+
+:root {
+    --web-blue: #020659;
+	
+	--dk1-blue:#020659;
+    --dk2-blue:#020873;
+    --dk3-blue:#030ABC;
+
+    --lt1-blue:#2104D9;
+    --lt2-blue:#0D8DFB;
+    --lt3-lt-blue:#2699FB;
+
+    --magenta:#590242;
+
+    --white: white;
+    --lt-gray: lightgray;
+    --font: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
 * {
 	box-sizing: border-box;
-	margin:0 auto;
-	padding:0;
   }
 
 html {
-	background-color:#020659;
+	background-color: var(--web-blue);
   }
 
 body {
-	min-width:320px;
+	background-color: var(--web-blue);
+	font-family: var(--font);
+	font-size: 1em;
+	line-height: 1.2;
+	color: var(--white);
   }
 
 ul {
