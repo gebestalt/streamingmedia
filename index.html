@@ -11,7 +11,7 @@
 
 <body>
 	<header>
-		<div>
+		<div class="header">
 			<h1>Smooth Jazz</h1>
 			<p>
 				This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.
@@ -19,14 +19,13 @@
 		</div>
 	</header>
 	<nav>
-		<h2>Main Navigation</h2>
 		<input type="checkbox" id="dropdown">
 		<label for="dropdown"><span></span></label>
 		<ul>
 		  <li><a class = "name" href="#">MuzakMaker</a></li> 
-		  <li><a class = "#trending" href="#">Trending Songs</a></li>
-		  <li><a class = "#playlists" href="#">Your Playlists</a></li>
-		  <li><a class = "#curated" href="#">Curated Playlists</a></li>
+		  <li><a class = "#trending" href="#">Trending<br>Songs</a></li>
+		  <li><a class = "#playlists" href="#">Your<br>Playlists</a></li>
+		  <li><a class = "#curated" href="#">Curated<br>Playlists</a></li>
 		  <li><a href="#" aria-label="user"><img src="images/duke-silver.png" alt=""></a></li>
 		</ul>
 	   </nav>
@@ -35,9 +34,14 @@
 		<section id="trending">
 			<h2>Trending Songs</h2>
 			<div>
-				<article>
-					<h3>Aloma</h3>
-					<p>Artist Cali</p>
+                <article>
+                    <div>
+                        <h3>Aloma</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Cali</dd>
+                        </dl>
+                    </div>
 					<img src="images/aloma-cover.png" alt="a white bird in flight">
 					<audio controls id="aloma">
 						<source src="audio/aloma.mp3" type="audio/mpeg">
@@ -45,8 +49,13 @@
 				</article>
 
 				<article>
-					<h3>My Road</h3>
-					<p>Artist Nesterouk</p>
+					<div>
+                        <h3>My Road</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Nesterouk</dd>
+                        </dl>
+                    </div>
 					<img src="images/my-road-cover.png" alt="road in desert landscape under blue sky">
 					<audio controls id="myroad">
 						<source src="audio/my-road.mp3" type="audio/mpeg">
@@ -54,8 +63,13 @@
 				</article>
 
 				<article>
-					<h3>Papaya</h3>
-					<p>Artist Dredstudio</p>
+					<div>
+                        <h3>Papaya</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Dredstudio</dd>
+                        </dl>
+                    </div>
 					<img src="images/papaya-cover.png" alt="papaya half with visible seeds in front of green background">
 					<audio controls id="papaya">
 						<source src="audio/papaya.mp3" type="audio/mpeg">
@@ -63,8 +77,13 @@
 				</article>
 
 				<article>
-					<h3>Smoothies</h3>
-					<p>Artist Black Rhomb</p>
+					<div>
+                        <h3>Smoothies</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Black Rhomb</dd>
+                        </dl>
+                    </div>
 					<img src="images/smoothies-cover.png" alt="pink smoothie in glass jar with gold metal straw with variety of tropical fruits around it ">
 					<audio controls id="smoothies-audio">
 						<source src="audio/smoothies.mp3" type="audio/mpeg">
@@ -72,8 +91,13 @@
 				</article>
 
 				<article>
-					<h3>Successful Performance</h3>
-					<p>Artist Ricky Bombino</p>
+					<div>
+                        <h3>Successful Performance</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Ricky Bombino</dd>
+                        </dl>
+                    </div>
 					<img src="images/successful-performance-cover.png" alt="a smiling man with blond hair and a red sweater in front of baby blue wall composed of large blocks">
 					<audio controls id="successful-audio">
 						<source src="audio/successful-performance.mp3" type="audio/mpeg">
@@ -121,7 +145,7 @@
 
 		<section id="curated">
 			<h2>Curated Playlists</h2>
-			<div>
+			<div class ="scroll">
 			<article>
 				<img src="images/boozy-brunch-cover.png" alt="hands with drinks together">
 				<h3>Boozy Brunch</h3>
