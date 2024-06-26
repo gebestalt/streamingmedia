@@ -97,6 +97,10 @@ nav{
     grid-template-columns: 5 1fr;
 }
   
+nav h2 {
+	visibility: hidden;
+	height: 1px;
+  }
   
 h1 {
 	font-size: 1.25em;
@@ -133,7 +137,7 @@ nav {
 nav ul { 
     max-height: 65px;
     position: absolute;
-    background-color: var(--dk2-blue);
+    background-color: #030A8C;
     overflow: hidden;
     transition: max-height .2s ease-out;
     grid-column-start: 1;
@@ -195,26 +199,36 @@ input:checked ~ #dropdown {
     max-height: 500px;
 }
 
-input:checked ~ label span {
+input:checked ~ #ham span {
     background: transparent;
 }
 
-input:checked ~ label span:before {
+input:checked ~ #ham span:before {
     transform: rotate(-45deg);
 }
 
-input:checked ~ label span:after {
+input:checked ~ #ham span:after {
     transform: rotate(45deg);
 }
 
-input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+input:checked ~ #ham:not(.steps) span:before, input:checked ~ #ham:not(.steps) span:after {
     top: 0;
 }
 
 #trending {
 	text-transform: capitalize;
 }
-
+  
+ul {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	background-color: var(--lt1-blue);
+	max-height: 0;
+	transition: max-height .2s ease-out;
+  }
 
 li {
     flex: 1;
@@ -228,17 +242,6 @@ li a {
 	text-decoration: none;
 	color: white;    
 }
-
-ul {
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	overflow: hidden;
-	background-color: var(--lt1-blue);
-	max-height: 0;
-	transition: max-height .2s ease-out;
-  }
   
 .name {
 	font-variant: small-caps;
@@ -349,7 +352,7 @@ audio {
 	left: 5px;
   }
   
-  .more {
+.more {
 	font-weight: bold;
 	font-size: 14px;
 	text-decoration: none;
@@ -365,7 +368,7 @@ audio {
   
 .more:hover {
 	background-color: var(--web-blue);
-  }
+}
   
 #playlists p, #curated p {
 	font-size: 14px;
