@@ -136,7 +136,6 @@ nav {
 
 nav ul { 
     max-height: 65px;
-    position: absolute;
     background-color: #030A8C;
     overflow: hidden;
     transition: max-height .2s ease-out;
@@ -357,23 +356,30 @@ audio {
 	font-size: 14px;
 	text-decoration: none;
 	background-color: var(--dk-purple);
-	color: white;
-	border-radius: 5px;
-	padding: 10px;
-	width: 150px;
-	display: block;
-	text-align: center;
-	margin: 10px 0 30px 32px;
+	border: none;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0px 10px;
 }
   
 .more:hover {
 	background-color: var(--web-blue);
 }
+
+.more {
+	float:right;
+	list-style-position: inherit;
+	margin: 10px 32px 30px 0;
+}
+
   
 #playlists p, #curated p {
 	font-size: 14px;
 	color: white;
-  }
+}
   
   
 a:hover, input:hover {
@@ -381,7 +387,7 @@ a:hover, input:hover {
 }
   
   
-  #trending ::-webkit-scrollbar {
+#trending ::-webkit-scrollbar {
 	width: 15px;
 }
   
@@ -423,37 +429,35 @@ a:hover, input:hover {
 	background-color: var(--dk3-blue);
 }
   
-  #playlists section {
+#playlists section{
 	background-color: var(--lt2-blue);
 	text-align: center;
 	padding: 10px;
 }
   
-  #curated section {
+#curated section {
 	background-color: var(--dk2-blue);
 	text-align: center;
 	padding: 10px;
 }
   
-  .scroll {
+.scroll {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	overflow-x: auto;
 	overflow-y: hidden;
 }
   
-  .scroll section {
+.scroll section {
 	margin: 10px;
 	position: relative; 
 }
   
-  .scroll div {
+.scroll div {
 	position: absolute;
 	top: 251px;
 	background-color: rgba(255,255,255,.75);
 	padding: 5px;
-	height: 50px;
-	width: 350px;
 }
   
  
@@ -570,10 +574,5 @@ audio::-webkit-media-controls-enclosure {
 		grid-template-rows: repeat(5, 40px);
 		grid-template-columns: 417px;
 		row-gap: 120px;
-	}
-  
-	.more {
-		float: right;
-		margin: 10px 32px 30px 0;
 	}
   }
